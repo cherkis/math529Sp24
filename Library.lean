@@ -1,4 +1,3 @@
-import Library.Basic
 import Library.Config.Constructor
 import Library.Config.Contradiction
 import Library.Config.ExistsDelaborator

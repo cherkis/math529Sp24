@@ -1,5 +1,3 @@
-/- Copyright (c) Heather Macbeth, 2023.  All rights reserved. -/
-import Mathlib.Tactic.GCongr
 import Library.Basic
 import AutograderLib
 
