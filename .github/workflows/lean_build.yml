@@ -21,5 +21,4 @@ jobs:
     - name: get Mathlib4 cache
       run: lake exe cache get
 
-    - name: build library
-      run: lake build Library
+
