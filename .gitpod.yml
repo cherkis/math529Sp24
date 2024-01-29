@@ -9,4 +9,4 @@ tasks:
   - init: |
       lake exe cache get && lake build Library && lake build AutograderLib
     command: |
-      PATH="$PATH:/workspace/math2001/scripts"
+      PATH="$PATH:/workspace/math529SP24/scripts"
