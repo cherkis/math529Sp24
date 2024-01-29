@@ -1,4 +1,4 @@
-import Mathlib.Tactic
+import Mathlib.Data.Real.Basic
 import AutograderLib
 
 /-! # Homework 0
@@ -26,3 +26,4 @@ theorem problem2 (h₁ : a ≤ b) (h₂ : b < c) (h₃ : c < d) (h₄ : d ≤ e)
   done
 
 end
+#check LE ℝ
