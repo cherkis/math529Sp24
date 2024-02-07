@@ -1,7 +1,5 @@
 import Mathlib.Tactic
 import AutograderLib
---import Mathlib.Data.Real.Basic
-
 
 /-! # Homework 1
 -/
