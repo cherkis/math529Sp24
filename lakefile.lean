@@ -2,17 +2,17 @@ import Lake
 open Lake DSL
 
 package math529SP24 where
-  moreServerArgs := #[
-    "-Dlinter.unusedVariables=false", -- ignores unused variables
-    "-DquotPrecheck=false",
-    "-DwarningAsError=false",
-    "-Dpp.unicode.fun=true"  -- pretty-prints `fun a ↦ b`
+  moreServerOptions := #[
+    ⟨`linter.unusedVariables, false⟩, -- ignores unused variables
+    ⟨`quotPrecheck, false⟩,
+    ⟨`warningAsError, false⟩,
+    ⟨`pp.unicode.fun, true⟩  -- pretty-prints `fun a ↦ b`
   ]
 
 lean_lib Library
 
 @[default_target]
-lean_lib Math2001 where
+lean_lib Math529 where
   globs := #[.submodules `Math529]
   moreLeanArgs := #[
     "-Dlinter.unusedVariables=false", -- ignores unused variables
