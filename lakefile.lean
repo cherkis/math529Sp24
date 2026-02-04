@@ -13,7 +13,7 @@ lean_lib Library
 
 @[default_target]
 lean_lib Math529 where
-  globs := #[.submodules `Math529]
+  globs := #[.submodules `Math496T]
   moreLeanArgs := #[
     "-Dlinter.unusedVariables=false", -- ignores unused variables
     "-DquotPrecheck=false",
