@@ -10,4 +10,8 @@
     "lean4.infoview.emphasizeFirstGoal": true,
     "lean4.infoview.showGoalNames": false,
     "window.autoDetectColorScheme": true,
+    "cSpell.words": [
+        "autograded",
+        "rintro"
+    ],
 }
