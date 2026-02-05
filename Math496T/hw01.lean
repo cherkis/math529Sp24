@@ -64,5 +64,4 @@ theorem problem10 : ∃ Q, ∀ P, P ∨ Q ↔ P := by
   sorry
   done
 
-
 end
