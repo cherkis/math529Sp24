@@ -44,7 +44,7 @@ theorem problem6 : P ∨ (Q ∧ R) ↔ (P ∨ Q) ∧ (P ∨ R) := by
   done
 
 @[autogradedProof 5]
-theorem problem7 : ¬ (P → Q) ↔ P ∧ ¬ Q := by
+theorem problem7 : P ∧ ¬ Q → ¬ (P → Q) := by
   sorry
   done
 
