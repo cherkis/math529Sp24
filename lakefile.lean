@@ -1,7 +1,7 @@
 import Lake
 open Lake DSL
 
-package math529SP24 where
+package Math529SP24 where
   moreServerOptions := #[
     ⟨`linter.unusedVariables, false⟩, -- ignores unused variables
     ⟨`quotPrecheck, false⟩,
