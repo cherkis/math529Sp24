@@ -12,7 +12,7 @@ package Math529SP24 where
 lean_lib Library
 
 @[default_target]
-lean_lib Math529Sp24 where
+lean_lib math529Sp24 where
   globs := #[.submodules `Math496T]
   moreLeanArgs := #[
     "-Dlinter.unusedVariables=false", -- ignores unused variables
