@@ -15,7 +15,7 @@ lean_lib Library
 lean_lib math529Sp24 where
   globs := #[.submodules `Math496T]
   moreLeanArgs := #[
-    "-Dlinter.unusedTactic=false"  -- suppresses unused tactic warning, such as `done`
+    "-Dlinter.unusedTactic=false",  -- suppresses unused tactic warning, such as `done`
     "-Dlinter.unusedVariables=false", -- ignores unused variables
     "-DquotPrecheck=false",
     "-DwarningAsError=false",
