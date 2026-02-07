@@ -3,6 +3,7 @@ open Lake DSL
 
 package math529SP24 where
   moreServerOptions := #[
+    ⟨`weak.linter.unusedTactic, false⟩,
     ⟨`linter.unusedVariables, false⟩, -- ignores unused variables
     ⟨`quotPrecheck, false⟩,
     ⟨`warningAsError, false⟩,
