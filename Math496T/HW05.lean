@@ -21,7 +21,7 @@ and
 @[autogradedProof 11]
 theorem problem1 (c : γ) (f : α → β) :
     Function.Injective f ↔
-    ∀ (γ : Type*) (g₁ g₂ : γ → α), f ∘ g₁ = f ∘ g₂ → g₁ = g₂ := by
+    ∀ (g₁ g₂ : γ → α), f ∘ g₁ = f ∘ g₂ → g₁ = g₂ := by
   sorry
   done
 
