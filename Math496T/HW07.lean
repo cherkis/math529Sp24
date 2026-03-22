@@ -130,15 +130,15 @@ theorem problem7 (hf : Function.Injective f) (hg : Function.Injective g) :
   Function.Injective h
     := by
     sorry
-    . -- case 1: x,y ∈ A_all
-      exact problem3 (f := f) (g := g) (hg := hg) (a := a) (a' := a') aA a'A hf heq
-    pick_goal 3 -- allows us to jump to the last goal, leaving the hardest two case for desert
-    . -- case 2: x,y ∉ A_all
-      sorry
-    . -- case 3: x ∈ A_all, y ∉ A_all
-      sorry
-    . -- case 4: x ∉ A_all, y ∈ A_all (interchanging roles of a and a')
-      sorry
+     -- case 1: x,y ∈ A_all
+    --  exact problem3 (f := f) (g := g) (hg := hg) (a := a) (a' := a') aA a'A hf heq
+    -- pick_goal 3 -- allows us to jump to the last goal, leaving the hardest two case for desert
+     -- case 2: x,y ∉ A_all
+    -- .  sorry
+     -- case 3: x ∈ A_all, y ∉ A_all
+    -- .  sorry
+     -- case 4: x ∉ A_all, y ∈ A_all (interchanging roles of a and a')
+    -- .  sorry
     done
 
 @[autogradedProof 6]
