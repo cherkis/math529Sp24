@@ -45,15 +45,18 @@ def A_all (f : α → β) (g : β → α) : Set α :=
   ⋃ n, layer f g n
 
 -- Local shorthands used throughout this section.
+
 local notation "A" => A_all f g
 
 -- This is problem 3 from Homework 6.
 -- You can use this lemma in the problems below, but you don't need to reprove it.
+@[legalAxiom]
 axiom wellDefined {x : α} (xA : x ∉ A) : ∃! b : β, g b = x 
 
 
 -- This is problem 4 from Homework 6 (just slightly rephrased).
 -- You can use this lemma in the problems below, but you don't need to reprove it.
+@[legalAxiom]
 axiom distinct
   {x  y : α} (xA : x ∉ A) (yA : y ∈ A) (b : β) : ¬ (g b = x ∧ b = f y) 
 
