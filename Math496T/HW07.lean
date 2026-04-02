@@ -49,13 +49,15 @@ local notation "A" => A_all f g
 
 -- This is problem 3 from Homework 6.
 -- You can use this lemma in the problems below, but you don't need to reprove it.
-axiom wellDefined {x : α} (xA : x ∉ A) : ∃! b : β, g b = x 
+@[legalAxiom]
+axiom wellDefined {x : α} (xA : x ∉ A) : ∃! b : β, g b = x
 
 
 -- This is problem 4 from Homework 6 (just slightly rephrased).
 -- You can use this lemma in the problems below, but you don't need to reprove it.
+@[legalAxiom]
 axiom distinct
-  {x  y : α} (xA : x ∉ A) (yA : y ∈ A) (b : β) : ¬ (g b = x ∧ b = f y) 
+  {x  y : α} (xA : x ∉ A) (yA : y ∈ A) (b : β) : ¬ (g b = x ∧ b = f y)
 
 -- Let us define the function h : α → β by cases on whether x ∈ A or not.
 noncomputable def h_def (f : α → β) (g : β → α) (_hg : Function.Injective g) (x : α) : β :=

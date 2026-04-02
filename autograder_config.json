@@ -2,6 +2,9 @@
   "public_points": 0,
   "show_unrecognized_axioms": true,
   "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound",
     "distinct",
     "wellDefined"
   ]
