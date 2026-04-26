@@ -4,6 +4,7 @@
   "allowed_axioms": [
     "propext",
     "Classical.choice",
+    "Classical.choose_spec",
     "Quot.sound",
     "distinct",
     "wellDefined"

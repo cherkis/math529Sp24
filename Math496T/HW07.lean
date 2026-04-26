@@ -45,6 +45,7 @@ def A_all (f : α → β) (g : β → α) : Set α :=
   ⋃ n, layer f g n
 
 -- Local shorthands used throughout this section.
+
 local notation "A" => A_all f g
 
 -- This is problem 3 from Homework 6.

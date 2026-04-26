@@ -37,12 +37,14 @@ def ContAt (f : ℝ → ℝ) (c : ℝ) : Prop :=
   ∀ ε > 0, ∃ δ > 0, ∀ x, |x - c| < δ → |f x - f c| < ε
 
 /-- We already proved the Intermediate Value Theorem (IVT) -/
+@[legalAxiom]
 axiom IVT (f : ℝ → ℝ) {a b : ℝ} (hab : a < b)
     (hcont : ∀ c ∈ Set.Icc a b, ContAt f c)
     (hfa : f a < 0) (hfb : 0 < f b) :
     ∃ c ∈ Set.Ioo a b, f c = 0
 
 /-- We also proved the Extreme Value Theorem (EVT) in lecture 29 -/
+@[legalAxiom]
 axiom evt_min (hab : (a:ℝ) ≤ b)
     {f : ℝ → ℝ} (hcont : ∀ c ∈ Set.Icc a b, ContAt f c) :
     ∃ xmin ∈ Set.Icc a b, ∀ x ∈ Set.Icc a b, f xmin ≤ f x
